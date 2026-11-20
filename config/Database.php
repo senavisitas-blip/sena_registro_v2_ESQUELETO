@@ -48,7 +48,7 @@ class Database
         } catch (PDOException $error) {
             // Si algo falla (credenciales, servidor apagado, etc.) se detiene
             // la ejecución mostrando un mensaje claro en lugar de un error críptico.
-            die("Error de conexión a la base de datos: " . $error->getMessage());
+            die("Error de conexión a la base de datos mysql: " . $error->getMessage());
         }
     }
 
